@@ -11,6 +11,7 @@ $ npm install
 ```
 
 Te recomiendo que uses Node 8 (viene con [npm@5](http://blog.npmjs.org/post/161081169345/v500)) porque va considerablemente más rápido :wink:
+
 Una vez se hayan bajado todas las dependencias, simplemente:
 
 ```sh
