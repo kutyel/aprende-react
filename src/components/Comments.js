@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import replace from 'react-string-replace'
 
 import Mention from './Mention'
+import CommentForm from './CommentForm'
 
 class Comments extends Component {
   state = { show: true }
@@ -21,24 +22,11 @@ class Comments extends Component {
     </div>
   )
 
-  submit = (e) => {
-    e.preventDefault();
-    const author = this.author.value
-    const comment = this.comment.value
-    const { postId } = this.props.params
-    this.props.addComment(postId, author, comment)
-    this.form.reset()
-  }
-
   render = () => (
     <div className='comments'>
       {this.state.show && (<div className='comments-list'>
         {this.props.postComments.map(this.renderComment)}
-        <form ref={form => this.form = form} className='comment-form' onSubmit={this.submit}>
-          <input type='text' placeholder='author' ref={input => this.author = input} />
-          <input type='text' placeholder='comment' ref={input => this.comment = input} />
-          <input type='submit' hidden />
-        </form>
+        <CommentForm {...this.props} />
       </div>)}
       <div className='control-buttons'>
         <button onClick={this.toggleComments}>
