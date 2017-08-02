@@ -7,14 +7,11 @@ const API_URL = 'https://gist.githubusercontent.com/kutyel/8f2d287ceb0a04bf3edb2
 class PhotoGrid extends Component {
   state = { posts: [] }
 
-  componentDidMount = async () => {
-    try {
-      const resp = await fetch(API_URL)
-      const posts = await resp.json()
-      this.setState({ posts })
-    } catch (err) {
-      console.error(`Error fetching kittens: ${err}`)
-    }
+  componentDidMount = () => {
+    fetch(API_URL)
+      .then(resp => resp.json())
+      .then(posts => this.setState({ posts }))
+      .catch(err => console.error(`Error fetching kittens: ${err}`))
   }
 
   render = () => (
