@@ -13,7 +13,7 @@
     "redux": "^3.7.1"
   },
   "devDependencies": {
-    "eslint-plugin-import": "^2.6.1",
+    "eslint-config-react-app": "^3.0.4",
     "react-scripts": "1.0.10"
   },
   "scripts": {

@@ -9,7 +9,7 @@ $ git clone https://github.com/kutyel/aprende-react.git
 $ cd aprende-react
 ```
 
-Te recomiendo que uses Node 8 (viene con [npm@5](http://blog.npmjs.org/post/161081169345/v500)) porque va considerablemente más rápido :wink:
+Te recomiendo que uses la última versión de Node (con su correspondiente versión de [npm](http://blog.npmjs.org/post/161081169345/v500)) :wink:
 
 ```sh
 $ npm install
