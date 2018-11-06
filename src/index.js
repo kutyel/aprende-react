@@ -3,7 +3,7 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { Router, Route, IndexRoute } from 'react-router'
 
-import './styles/style.css'
+import './styles/index.css'
 
 import store, { history } from './store'
 
@@ -14,9 +14,9 @@ import PhotoGrid from './components/PhotoGrid'
 const router = (
   <Provider store={store}>
     <Router history={history}>
-      <Route path='/' component={App}>
+      <Route path="/" component={App}>
         <IndexRoute component={PhotoGrid} />
-        <Route path='/view/:postId' component={Single} />
+        <Route path="/view/:postId" component={Single} />
       </Route>
     </Router>
   </Provider>

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 class CommentForm extends Component {
   submit = e => {
-    e.preventDefault();
+    e.preventDefault()
     const author = this.author.value
     const comment = this.comment.value
     const { postId } = this.props.params
@@ -11,10 +11,22 @@ class CommentForm extends Component {
   }
 
   render = () => (
-    <form ref={form => this.form = form} className='comment-form' onSubmit={this.submit}>
-      <input type='text' placeholder='author' ref={input => this.author = input} />
-      <input type='text' placeholder='comment' ref={input => this.comment = input} />
-      <input type='submit' hidden />
+    <form
+      ref={form => (this.form = form)}
+      className="comment-form"
+      onSubmit={this.submit}
+    >
+      <input
+        type="text"
+        placeholder="author"
+        ref={input => (this.author = input)}
+      />
+      <input
+        type="text"
+        placeholder="comment"
+        ref={input => (this.comment = input)}
+      />
+      <input type="submit" hidden />
     </form>
   )
 }

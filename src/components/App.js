@@ -6,8 +6,12 @@ import * as actionCreators from '../actions/actionCreators'
 
 const mapStateToProps = ({ posts, comments }) => ({ posts, comments })
 
-const mapDispatchToProps = dispatch => bindActionCreators(actionCreators, dispatch)
+const mapDispatchToProps = dispatch =>
+  bindActionCreators(actionCreators, dispatch)
 
-const App = connect(mapStateToProps, mapDispatchToProps)(Main)
+const App = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Main)
 
 export default App
