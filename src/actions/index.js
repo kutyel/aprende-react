@@ -3,7 +3,7 @@ import {
   DECREMENT_LIKES,
   ADD_COMMENT,
   REMOVE_COMMENT,
-} from './actionTypes'
+} from './types'
 
 export const increment = index => ({ type: INCREMENT_LIKES, index })
 export const decrement = index => ({ type: DECREMENT_LIKES, index })

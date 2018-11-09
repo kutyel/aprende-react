@@ -1,4 +1,4 @@
-import { INCREMENT_LIKES, DECREMENT_LIKES } from '../actions/actionTypes'
+import { INCREMENT_LIKES, DECREMENT_LIKES } from '../actions/types'
 
 export default (state = [], { type, index }) => {
   switch (type) {

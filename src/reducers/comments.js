@@ -1,4 +1,4 @@
-import { ADD_COMMENT, REMOVE_COMMENT } from '../actions/actionTypes'
+import { ADD_COMMENT, REMOVE_COMMENT } from '../actions/types'
 
 const postComments = (
   state = [],
