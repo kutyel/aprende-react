@@ -1,4 +1,5 @@
 import { over, lensPath, inc, dec, not } from 'ramda'
+
 import { INCREMENT_LIKES, DECREMENT_LIKES } from '../actions/types'
 
 export default (state = [], { type, index }) => {
