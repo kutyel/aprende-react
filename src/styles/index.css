@@ -22,7 +22,7 @@ body {
   padding: 2rem;
   border: 1px solid var(--lightgrey);
   background: #fff;
-  box-shadow: 0 0 0 5px rgba(0,0,0,0.03);
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.03);
   position: relative;
 }
 
@@ -109,7 +109,8 @@ body {
 }
 
 .likes-heart {
-  background: url("http://f.cl.ly/items/3Y373q2Q3J3Y1j203n0m/Bitmap-3.png") center no-repeat;
+  background: url('http://f.cl.ly/items/3Y373q2Q3J3Y1j203n0m/Bitmap-3.png')
+    center no-repeat;
   background-size: contain;
   font-size: 2rem;
   padding: 1rem;

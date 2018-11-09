@@ -10,7 +10,7 @@ const Single = props => {
   const comments = props.comments[postId] || []
 
   return (
-    <div className='single-photo'>
+    <div className="single-photo">
       <Photo i={index} post={post} {...props} />
       <Comments postComments={comments} {...props} />
     </div>

@@ -1,22 +1,28 @@
-import * as types from '../actions/actionTypes'
+import { INCREMENT_LIKES, DECREMENT_LIKES } from '../actions/types'
 
-const posts = (state = [], { type, index, posts }) => {
+export default (state = [], { type, index }) => {
   switch (type) {
-    case types.INCREMENT_LIKES:
+    case INCREMENT_LIKES:
       return [
         ...state.slice(0, index),
-        { ...state[index], likes: { count: state[index].likes.count + 1 }, user_has_liked: true },
-        ...state.slice(index + 1)
+        {
+          ...state[index],
+          likes: { count: state[index].likes.count + 1 },
+          user_has_liked: true,
+        },
+        ...state.slice(index + 1),
       ]
-    case types.DECREMENT_LIKES:
+    case DECREMENT_LIKES:
       return [
         ...state.slice(0, index),
-        { ...state[index], likes: { count: state[index].likes.count - 1 }, user_has_liked: false },
-        ...state.slice(index + 1)
+        {
+          ...state[index],
+          likes: { count: state[index].likes.count - 1 },
+          user_has_liked: false,
+        },
+        ...state.slice(index + 1),
       ]
     default:
       return state
   }
 }
-
-export default posts
