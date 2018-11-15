@@ -14,6 +14,8 @@ const postComments = (
   }
 }
 
+// This is called "reducer composition"
+// https://redux.js.org/recipes/structuringreducers/splittingreducerlogic
 export default (state = [], action) =>
   !action.postId
     ? state
