@@ -11,7 +11,8 @@
     "react-router": "^2.8.1",
     "react-router-redux": "^4.0.8",
     "react-string-replace": "^0.4.0",
-    "redux": "^3.7.1"
+    "redux": "^3.7.1",
+    "redux-logger": "^3.0.6"
   },
   "devDependencies": {
     "eslint-plugin-import": "^2.14.0",
