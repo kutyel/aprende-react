@@ -8,10 +8,8 @@ import posts from './data/posts.json'
 import comments from './data/comments.json'
 
 const defaultState = { posts, comments }
-const enhancers = compose(
-  window.devToolsExtension ? window.devToolsExtension() : identity
-)
-const store = createStore(reducer, defaultState, enhancers)
+const composeEnchancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+const store = createStore(reducer, defaultState, composeEnchancers(identity))
 
 export const history = syncHistoryWithStore(browserHistory, store)
 export default store
