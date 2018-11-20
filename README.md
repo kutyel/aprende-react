@@ -1,4 +1,6 @@
-# aprende-react
+![aprende-react](cover.png)
+
+# aprende-react ⚛️
 
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
